@@ -1,0 +1,133 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #ccc;
+}
+
+
+ul{
+	position: absolute;
+	list-style: none;
+	display: flex;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	
+
+}
+
+ul li{
+	margin: 0 40px;
+	font-size: 20px;
+	color: #262626;
+	transition: .5s;
+	font-weight: lighter;
+	
+}
+
+
+.box{
+	position: relative;
+	width: 60px;
+	height: 40px;
+	padding-top: 20px;
+	background-color: #Fff;
+	text-align: center;
+	transform: perspective(1000px) rotate(-30deg) skew(20deg) translate(0,0);
+	box-shadow: -20px 20px 20px rgba(0,0,0,0.5);
+	transition: .5s;
+}
+
+
+.box:hover{
+	transform: rotate(-30deg) skew(20deg) translate(20px,-19px);
+	transition: .5s;
+	box-shadow: -30px 30px 30px 5px rgba(0,0,0,0.5);
+	color: white;
+}
+
+.box:before{
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 100%;
+	top: 8px;
+	left: -15px;
+	background-color: #b1b1b1;
+	transform: rotate(0deg) skewY(-45deg);
+	transition: .5s;
+}
+
+.box:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 15px;
+	bottom: -15px;
+	left: -7.5px;
+	background-color: #b1b1b1;
+	transform: rotate(0deg) skewX(-45deg);
+	transition: .5s;
+}
+
+ul li:hover:nth-child(1) div{
+	background-color: #3b5999;
+}
+
+ul li:hover:nth-child(1) div:after{
+	background-color: #4a69ad;
+}
+
+ul li:hover:nth-child(1) div:before{
+	background-color: #2e4a86;
+}
+
+ul li:hover:nth-child(2) div{
+	background-color: #55acee;
+}
+
+ul li:hover:nth-child(2) div:after{
+	background-color: #4d9fde;
+}
+
+ul li:hover:nth-child(2) div:before{
+	background-color: #4184b7;
+}
+
+ul li:hover:nth-child(3) div{
+	background-color: #dd4b39;
+}
+
+ul li:hover:nth-child(3) div:after{
+	background-color: #E8432E;
+}
+
+ul li:hover:nth-child(3) div:before{
+	background-color: #c13929 ;
+}
+
+ul li:hover:nth-child(4) div{
+	background-color: #0077b5;
+}
+
+ul li:hover:nth-child(4) div:after{
+	background-color: #0d82bf;
+}
+
+ul li:hover:nth-child(4) div:before{
+	background-color: #036aa0;
+}
+
+ul li:hover:nth-child(5) div{
+	background-color: #e4405f;
+}
+
+ul li:hover:nth-child(5) div:after{
+	background-color: #f1395c;
+}
+
+ul li:hover:nth-child(5) div:before{
+	background-color: #d02d4c;
+}
+
+
